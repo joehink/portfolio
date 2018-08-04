@@ -1,0 +1,109 @@
+/* Global Classes */
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.button {
+    color: #2e3532;
+    text-decoration: none;
+    border: 2px solid #2e3532;
+    padding: 10px 25px;
+    margin: 5px 0;
+    display: block;
+    text-align: center;
+    transition: background-color .1s ease-in,
+                color .10s ease-in;
+}
+.button:hover {
+    color: #fffcf6;
+    background-color: #2e3532;
+}
+
+.plyr {
+    margin: 15px 0 15px; 
+}
+.plyr .plyr__controls{
+    background: #2e3532;
+    padding: 10px;
+}
+.plyr .plyr__controls button, .plyr__time{
+    color: white;
+} 
+.plyr .plyr__controls button:hover {
+    background-color: #6b9bc3;
+}
+.plyr .plyr__menu, .plyr__control--forward, .plyr__control--back {
+    color: #2e3532 !important;
+}
+
+/* Body */
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #fffcf6;
+}
+
+/* Header */
+header {
+    padding: 2em;
+}
+.name {
+    font-size: 67.5px;
+    font-family: 'Abril Fatface';
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 3px solid #2e3532;
+}
+.name a {
+    color: #2e3532;
+    text-decoration: none;
+}
+
+/* About */
+.about {
+    margin-top: 25px;
+    padding: 2em;
+}
+.about p {
+    margin: 15px 0;
+    line-height: 1.25em;
+}
+
+
+/* Media Breakpoints */
+@media(min-width: 375px) {
+    .name {
+        font-size: 72px;
+    }
+}
+
+@media(min-width: 960px) {
+    /* Header */
+    header .container {
+        display: flex;
+        align-items: flex-end;
+    }
+    nav {
+        margin: 0 0 22.5px 1em;
+    }
+    .name {
+        border-bottom: none;
+        margin: 0;
+    }
+    nav .button {
+        display: inline-block; 
+        padding: 5px 15px;
+        margin: 0 5px;
+    }
+
+    /* About */
+    .about {
+        margin-top: 0;
+        padding: 0;
+    }
+    .about p {
+        margin: 0 0 15px 0;
+    }
+    .about .plyr {
+        max-width: 300px;
+    }
+}

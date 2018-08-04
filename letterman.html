@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Late Night with David Letterman</title>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <link href="https://fonts.googleapis.com/css?family=Lato|Oleo+Script+Swash+Caps" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="stylesheets/letterman.css">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="scripts/jquery.fancybox.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.fancybox').fancybox({type: "iframe"});
+    });
+    </script>
+  </head>
+  <body>
+    <div class="banner"><h1>Late Night Archive</h1></div>
+    <div class="lightbox"></div>
+    <div class="results"></div>
+    <div class="buttons"></div>
+
+    <script src="scripts/letterman.js" charset="utf-8"></script>
+  </body>
+</html>
