@@ -118,6 +118,9 @@ header {
     margin: 15px 0;
 }
 
+.messenger {
+    background: rgba(0, 123, 255, .15);
+}
 .gohike img {
     border-radius: 40px;
     max-width: 300px
