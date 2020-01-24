@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss styles/tailwind.css -o public/build/tailwind.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joehink/portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joehink/portfolio/issues"
+  },
+  "homepage": "https://github.com/joehink/portfolio#readme",
+  "dependencies": {
+    "@fullhuman/postcss-purgecss": "^2.0.5",
+    "autoprefixer": "^9.7.4",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.1.4"
+  }
+}
