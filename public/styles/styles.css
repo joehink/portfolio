@@ -1,0 +1,41 @@
+/* VARIABLES */
+:root {
+    /* COLORS */
+    --joe: #EF9339;
+    --soundfolder: #39815B;
+    --tubeless: #CB483D;
+    --color-saver: #323031;
+    --circuit-breaker: #888888;
+    --trivia-quiz: #204B5F;
+}
+
+/* FONT STYLES */
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* LINKS/BUTTONS */
+.link,
+.button {
+    outline: none;
+    background: transparent;
+    border: 4px solid white;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* PANELS */
+.panel {
+    min-height: 100vh;
+    color: white;
+}
+
+/* PANEL COLORS */
+.joe { background: var(--joe); }
+.soundfolder { background: var(--soundfolder); }
+.tubeless { background: var(--tubeless); }
+.color-saver { background: var(--color-saver); }
+.circuit-breaker { background: var(--circuit-breaker); }
+.circuit-breaker { background: var(--circuit-breaker); }
+.trivia-quiz { background: var(--trivia-quiz); }
