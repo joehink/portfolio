@@ -25,9 +25,31 @@
     text-transform: uppercase;
 }
 
+/* IMAGES */
+.profile {
+    width: 200px;
+    display: block;
+    margin: 0 auto 1.5rem;
+}
+.img-container {
+    position: relative;
+    cursor: pointer;
+}
+.img-container .fullscreen {
+    position: absolute;
+    bottom: -4px;
+    right: -4px;
+}
+.img-container .fullscreen img {
+    transform: scale(.8);
+    transition: transform .25s ease-in-out;
+}
+.img-container:hover .fullscreen img {
+    transform: scale(1);
+}
+
 /* PANELS */
 .panel {
-    min-height: 100vh;
     color: white;
 }
 
