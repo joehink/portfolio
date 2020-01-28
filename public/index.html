@@ -12,12 +12,27 @@
 
     <script src="./scripts/jquery-3.4.1.min.js"></script>
     <script src="./scripts/lity.min.js"></script>
+    <script src="./scripts/rellax.min.js"></script>
+    <script src="./scripts/script.js"></script>
 </head>
 <body>
     <div class="grid">
+        <aside class="sidebar">
+            <nav>
+                <ul>
+                    <li><button class="nav-btn panel-btn" data-panel="joe">Joe</button></li>
+                    <li><button class="nav-btn panel-btn" data-panel="soundfolder">Soundfolder</button></li>
+                    <li><button class="nav-btn panel-btn" data-panel="tubeless">Tubeless</button></li>
+                    <li><button class="nav-btn panel-btn" data-panel="color-saver">Color Saver</button></li>
+                    <li><button class="nav-btn panel-btn" data-panel="circuit-breaker">Circuit Breaker</button></li>
+                    <li><button class="nav-btn panel-btn" data-panel="trivia-quiz">Trivia Quiz</button></li>
+                </ul>
+            </nav>
+        </aside>
         <main>
-            <section class="joe panel px-8 py-12 xl:p-16">
-                <div class="max-w-6xl">
+            <section class="joe panel px-8 py-12 xl:p-16" data-panel="joe">
+                <div class="decorative-text rellax" aria-hidden="true" data-rellax-speed="-6">Joe</div>
+                <div class="max-w-6xl z-10">
                     <div class="md:flex items-baseline">
                         <h2 class="m-0 uppercase font-black leading-tight text-3xl md:text-5xl xl:text-6xl">Joe Hinkley</h2>
                         <h3 class="m-0 mt-1 md:ml-8 uppercase font-black text-xs md:text-base xl:text-2xl">Front End Engineer</h3>
@@ -33,14 +48,20 @@
                         polished, finished product by making improvements based on user feedback.
                     </p>
                     <div class="md:mt-16">
-                        <button class="button mb-4 md:mb-0 p-3 px-8 inline-block w-full md:w-auto text-xs md:text-base">Projects</button>
-                        <a href="#" class="link mb-4 md:mb-0 p-3 px-8 inline-block w-full md:w-auto text-xs md:text-base md:ml-4">GitHub</a>
-                        <a href="#" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:mb-0 md:text-base md:ml-4">LinkedIn</a>
+                        <button
+                            class="button panel-btn mb-4 md:mb-0 p-3 px-8 inline-block w-full md:w-auto text-xs md:text-base"
+                            data-panel="soundfolder"
+                        >
+                            Projects
+                        </button>
+                        <a href="https://github.com/joehink" target="_blank" class="link mb-4 md:mb-0 p-3 px-8 inline-block w-full md:w-auto text-xs md:text-base md:ml-4">GitHub</a>
+                        <a href="https://www.linkedin.com/in/joehinkley" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:mb-0 md:text-base md:ml-4">LinkedIn</a>
                     </div>
                 </div>
             </section>
-            <section class="soundfolder panel px-8 py-12 xl:p-16">
-                <div class="max-w-6xl">
+            <section class="soundfolder panel px-8 py-12 xl:p-16" data-panel="soundfolder">
+                <div class="decorative-text rellax" aria-hidden="true" data-rellax-speed="-5">Soundfolder</div>
+                <div class="max-w-6xl z-10">
                     <div class="md:flex items-baseline">
                         <h2 class="m-0 uppercase font-black leading-tight text-3xl md:text-5xl xl:text-6xl">Soundfolder</h2>
                         <h3 class="m-0 mt-1 md:ml-8 uppercase font-black text-xs md:text-base xl:text-2xl">GatsbyJS, React, SASS</h3>
@@ -55,23 +76,26 @@
                                 erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing
                                 elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
                             </p>
-                            <a href="#" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:mt-8">Live Site</a>
+                            <div class="md:mt-8">
+                                <a href="https://www.soundfolder.com" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-4 md:text-base">Live Site</a>
+                                <a href="https://github.com/joehink/soundfolder" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:ml-4">GitHub</a>
+                            </div>
                         </div>
                         <div class="screenshots">
-                            <a href="./images/soundfolder/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/soundfolder/1.png" />
+                            <a href="./images/soundfolder/large/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/soundfolder/small/1.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/soundfolder/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/soundfolder/2.png" />
+                            <a href="./images/soundfolder/large/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/soundfolder/small/2.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/soundfolder/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
-                                <img src="./images/soundfolder/3.png" />
+                            <a href="./images/soundfolder/large/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
+                                <img src="./images/soundfolder/small/3.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
@@ -80,8 +104,9 @@
                     </div>
                 </div>
             </section>
-            <section class="tubeless panel px-8 py-12 xl:p-16">
-                <div class="max-w-6xl">
+            <section class="tubeless panel px-8 py-12 xl:p-16" data-panel="tubeless">
+                <div class="decorative-text rellax" aria-hidden="true" data-rellax-speed="-4">Tubeless</div>
+                <div class="max-w-6xl z-10">
                     <div class="md:flex items-baseline">
                         <h2 class="m-0 uppercase font-black leading-tight text-3xl md:text-5xl xl:text-6xl">Tubeless</h2>
                         <h3 class="m-0 mt-1 md:ml-8 uppercase font-black text-xs md:text-base xl:text-2xl">React, Redux, Node, Express</h3>
@@ -94,23 +119,26 @@
                                 subscribed channels or search for something specific. No recommended videos, 
                                 no comments, no likes, and no dislikes. Just your favorite videos!
                             </p>
-                            <a href="#" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:mt-8">Live Site</a>
+                            <div class="md:mt-8">
+                                <a href="https://tubeless.herokuapp.com" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-4 md:text-base">Live Site</a>
+                                <a href="https://github.com/joehink/tubeless" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:ml-4">GitHub</a>
+                            </div>
                         </div>
                         <div class="screenshots">
-                            <a href="./images/tubeless/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/tubeless/1.png" />
+                            <a href="./images/tubeless/large/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/tubeless/small/1.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/tubeless/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/tubeless/2.png" />
+                            <a href="./images/tubeless/large/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/tubeless/small/2.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/tubeless/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
-                                <img src="./images/tubeless/3.png" />
+                            <a href="./images/tubeless/large/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
+                                <img src="./images/tubeless/small/3.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
@@ -119,8 +147,9 @@
                     </div>
                 </div>
             </section>
-            <section class="color-saver panel px-8 py-12 xl:p-16">
-                <div class="max-w-6xl">
+            <section class="color-saver panel px-8 py-12 xl:p-16" data-panel="color-saver">
+                <div class="decorative-text rellax" aria-hidden="true" data-rellax-speed="-3">Color Saver</div>
+                <div class="max-w-6xl z-10">
                     <div class="md:flex items-baseline">
                         <h2 class="m-0 uppercase font-black leading-tight text-3xl md:text-5xl xl:text-6xl">Color Saver</h2>
                         <h3 class="m-0 mt-1 md:ml-8 uppercase font-black text-xs md:text-base xl:text-2xl">Node, Express, MongoDB</h3>
@@ -133,23 +162,26 @@
                                 have a quick reference to your palette, or revisit old projects when you 
                                 are trying to remember a color that you loved.
                             </p>
-                            <a href="#" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:mt-8">Live Site</a>
+                            <div class="md:mt-8">
+                                <a href="https://color-saver.herokuapp.com" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-4 md:text-base">Live Site</a>
+                                <a href="https://github.com/joehink/color-saver" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:ml-4">GitHub</a>
+                            </div>
                         </div>
                         <div class="screenshots">
-                            <a href="./images/color_saver/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/color_saver/1.png" />
+                            <a href="./images/color_saver/large/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/color_saver/small/1.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/color_saver/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/color_saver/2.png" />
+                            <a href="./images/color_saver/large/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/color_saver/small/2.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/color_saver/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
-                                <img src="./images/color_saver/3.png" />
+                            <a href="./images/color_saver/large/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
+                                <img src="./images/color_saver/small/3.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
@@ -158,8 +190,9 @@
                     </div>
                 </div>
             </section>
-            <section class="circuit-breaker panel px-8 py-12 xl:p-16">
-                <div class="max-w-6xl">
+            <section class="circuit-breaker panel px-8 py-12 xl:p-16" data-panel="circuit-breaker">
+                <div class="decorative-text rellax" aria-hidden="true" data-rellax-speed="-2">Circuit Breaker</div>
+                <div class="max-w-6xl z-10">
                     <div class="md:flex items-baseline">
                         <h2 class="m-0 uppercase font-black leading-tight text-3xl md:text-5xl xl:text-6xl">Circuit Breaker</h2>
                         <h3 class="m-0 mt-1 md:ml-8 uppercase font-black text-xs md:text-base xl:text-2xl">React, Node, Express</h3>
@@ -174,23 +207,26 @@
                                 erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing
                                 elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
                             </p>
-                            <a href="#" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:mt-8">Live Site</a>
+                            <div class="md:mt-8">
+                                <a href="https://ga-circuit-breaker.herokuapp.com" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-4 md:text-base">Live Site</a>
+                                <a href="https://github.com/joehink/circuit-breaker-frontend" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:ml-4">GitHub</a>
+                            </div>
                         </div>
                         <div class="screenshots">
-                            <a href="./images/circuit_breaker/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/circuit_breaker/1.png" />
+                            <a href="./images/circuit_breaker/large/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/circuit_breaker/small/1.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/circuit_breaker/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/circuit_breaker/2.png" />
+                            <a href="./images/circuit_breaker/large/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/circuit_breaker/small/2.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/circuit_breaker/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
-                                <img src="./images/circuit_breaker/3.png" />
+                            <a href="./images/circuit_breaker/large/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
+                                <img src="./images/circuit_breaker/small/3.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
@@ -199,8 +235,9 @@
                     </div>
                 </div>
             </section>
-            <section class="trivia-quiz panel px-8 py-12 xl:p-16">
-                <div class="max-w-6xl">
+            <section class="trivia-quiz panel px-8 py-12 xl:p-16" data-panel="trivia-quiz">
+                <div class="decorative-text rellax" aria-hidden="true" data-rellax-speed="-1">Trivia Quiz</div>
+                <div class="max-w-6xl z-10">
                     <div class="md:flex items-baseline">
                         <h2 class="m-0 uppercase font-black leading-tight text-3xl md:text-5xl xl:text-6xl">Trivia Quiz</h2>
                         <h3 class="m-0 mt-1 md:ml-8 uppercase font-black text-xs md:text-base xl:text-2xl">Vue, Vuex, AJAX</h3>
@@ -215,23 +252,26 @@
                                 erat, sed diam voluptua. Lorem ipsum dolor sit amet, consetetur sadipscing
                                 elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna.
                             </p>
-                            <a href="#" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:mt-8">Live Site</a>
+                            <div class="md:mt-8">
+                                <a href="https://joehink.github.io/trivia-quiz" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-4 md:text-base">Live Site</a>
+                                <a href="https://github.com/joehink/trivia-quiz" target="_blank" class="link p-3 px-8 inline-block w-full md:w-auto text-xs mb-6 md:text-base md:ml-4">GitHub</a>
+                            </div>
                         </div>
                         <div class="screenshots">
-                            <a href="./images/trivia_quiz/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/trivia_quiz/1.png" />
+                            <a href="./images/trivia_quiz/large/1.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/trivia_quiz/small/1.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/trivia_quiz/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
-                                <img src="./images/trivia_quiz/2.png" />
+                            <a href="./images/trivia_quiz/large/2.png" data-lity class="img-container border-4 border-white overflow-hidden mb-6 inline-block">
+                                <img src="./images/trivia_quiz/small/2.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
                             </a>
-                            <a href="./images/trivia_quiz/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
-                                <img src="./images/trivia_quiz/3.png" />
+                            <a href="./images/trivia_quiz/large/3.png" data-lity class="img-container border-4 border-white overflow-hidden inline-block">
+                                <img src="./images/trivia_quiz/small/3.png" />
                                 <span class="fullscreen p-2 bg-white block">
                                     <img src="./images/icons/fullscreen.svg" />
                                 </span>
@@ -241,18 +281,6 @@
                 </div>
             </section>
         </main>
-        <aside class="sidebar">
-            <nav>
-                <ul>
-                    <li><button>Joe</button></li>
-                    <li><button>Soundfolder</button></li>
-                    <li><button>Tubeless</button></li>
-                    <li><button>Color Saver</button></li>
-                    <li><button>Circuit Breaker</button></li>
-                    <li><button>Trivia Quiz</button></li>
-                </ul>
-            </nav>
-        </aside>
     </div>
 </body>
 </html>
