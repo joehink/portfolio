@@ -49,6 +49,10 @@ body:not(.tabbing) .nav-btn {
 .img-container {
     position: relative;
     cursor: pointer;
+    width: 100%;
+}
+.img-container > img {
+    width: 100%;
 }
 .img-container .fullscreen {
     position: absolute;
