@@ -54,7 +54,6 @@ window.onload = () => {
 
     const handleDannyClip = event => {
         if (event.keyCode === 100) {
-            console.log(event.keyCode)
             dCount++;
             if (dCount === 60) {
                 dannyClip.play();
