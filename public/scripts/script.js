@@ -3,6 +3,9 @@ window.onload = () => {
     const panelBtns = document.querySelectorAll('.panel-btn');
     const panels = document.querySelectorAll('.panel');
 
+    let dCount = 0;
+    const dannyClip = new Audio('./audio/danny_clip.mp3');
+
     const scrollToPanel = event => {
         const panelName = event.target.dataset.panel;
         const panel = document.querySelector(`.${panelName}`);
@@ -48,9 +51,23 @@ window.onload = () => {
         window.removeEventListener('mousedown', handleMouseDownOnce);
         window.addEventListener('keydown', handleFirstTab);
     }
-    window.addEventListener('keydown', handleFirstTab);
 
-    
+    const handleDannyClip = event => {
+        if (event.keyCode === 100) {
+            console.log(event.keyCode)
+            dCount++;
+            if (dCount === 60) {
+                dannyClip.play();
+            }
+        }
+    }
+
+
+
+
+    window.addEventListener('keydown', handleFirstTab);
+    window.addEventListener('keypress', handleDannyClip);
+
     panelBtns.forEach(btn => {
         btn.addEventListener('click', scrollToPanel)
     });
@@ -58,12 +75,12 @@ window.onload = () => {
     window.onscroll = updateNav;
 
     updateNav();
-    var rellax = new Rellax('.rellax', {
+    new Rellax('.rellax', {
         speed: -2,
         center: false,
         wrapper: null,
         round: true,
         vertical: true,
         horizontal: false
-      });
+    });
 }
