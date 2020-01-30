@@ -86,7 +86,7 @@ body:not(.tabbing) .nav-btn {
 
 .nav-btn {
     color: transparent;
-    transition: color 1s, transform .5s .1s;
+    transition: color 1s;
     position: relative;
 }
 .nav-btn::after {
