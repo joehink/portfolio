@@ -126,7 +126,7 @@ body:not(.tabbing) .nav-btn {
 @media(min-width: 768px) {
     /* IMAGES */
     .profile {
-        width: 320px;
+        width: 350px;
         float: right;
         shape-outside: polygon(78px -1px, 67.89% -0.15%, 68.06% 22.42%, 75.52% 35.98%, 81.43% 48.5%, 94.06% 56.97%, 104.84% 96.19%, -4.96% 96.59%, 4.4% 57%, 13.4% 48.58%, 44px 123px, 24.03% 27.16%);
     }
