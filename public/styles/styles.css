@@ -4,7 +4,7 @@
     --joe: #EF9339;
     --soundfolder: #39815B;
     --tubeless: #CB483D;
-    --color-saver: #323031;
+    --color-saver: #4E598C;
     --circuit-breaker: #888888;
     --trivia-quiz: #204B5F;
 }
@@ -42,7 +42,8 @@ body:not(.tabbing) .nav-btn {
 
 /* IMAGES */
 .profile {
-    width: 200px;
+    width: 100%;
+    max-width: 350px;
     display: block;
     margin: 0 auto 1.5rem;
 }
@@ -126,7 +127,6 @@ body:not(.tabbing) .nav-btn {
 @media(min-width: 768px) {
     /* IMAGES */
     .profile {
-        width: 350px;
         float: right;
         shape-outside: polygon(78px -1px, 67.89% -0.15%, 68.06% 22.42%, 75.52% 35.98%, 81.43% 48.5%, 94.06% 56.97%, 104.84% 96.19%, -4.96% 96.59%, 4.4% 57%, 13.4% 48.58%, 44px 123px, 24.03% 27.16%);
     }
@@ -193,11 +193,11 @@ body:not(.tabbing) .nav-btn {
         display: block;
         position: absolute;
         top: 0;
-        left: 0;
+        right: 0;
         font-size: 36rem;
         font-weight: 900;
         text-transform: uppercase;
-        writing-mode: vertical-rl;
+        writing-mode: vertical-lr;
         opacity: .06;
         line-height: .75;
         white-space: nowrap;
